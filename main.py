@@ -1,6 +1,12 @@
 import os
 
-LINE = "My worst Monday: deploy frozen, inbox flooded, and a stand-up that should have been a message \u2014 my therapist now bills by the sprint."
+def build_line():
+    setup = "My worst Monday: deploy frozen, inbox flooded, and a stand-up that should have been a message"
+    twist = "my therapist now bills by the sprint."
+    return setup + " \u2014 " + twist
+
+
+LINE = build_line()
 
 
 def main():
